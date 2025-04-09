@@ -7,8 +7,10 @@ const App = () => {
   const [ay, setAy] = useState("");
   const [yil, setYil] = useState("");
   const [guvenlik, setGuvenlik] = useState("");
-  
-  const handleClick = () => {
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    
     alert(`
       Adınız: ${ad}
       Kart Numaranız: ${kartNo}
@@ -17,17 +19,18 @@ const App = () => {
       Güvenlik Kodunuz: ${guvenlik}`);
   };
 
+
   return (
     <div className="paymentContainer">
       <h2 className="title">Ödeme Bilgileri</h2>
       <p className="subtitle">Kredi kartı bilgilerini giriniz</p>
 
-      <form className="paymentForm">
+      <form className="paymentForm" onSubmit={handleClick}>
         <div className="formGroup">
           <label>Kart Üzerindeki İsim</label>
           <input
             type="text"
-            placeholder="Adınızı Giriniz"
+            placeholder="Ahmet Yılmaz"
             onChange={(e) => setAd(e.target.value)}
           />
         </div>
@@ -44,7 +47,7 @@ const App = () => {
         <div className="selectContainer">
           <div className="formGroup">
             <label>Ay</label>
-            <select className="ay" onChange={(e)=>setAy(e.target.value)}>
+            <select className="ay" onChange={(e) => setAy(e.target.value)}>
               <option value="">AA</option>
               <option value="01">1</option>
               <option value="02">2</option>
@@ -63,7 +66,7 @@ const App = () => {
 
           <div className="formGroup">
             <label>Yıl</label>
-            <select onChange={(e)=>setYil(e.target.value)}>
+            <select onChange={(e) => setYil(e.target.value)}>
               <option value="">YY</option>
               <option value="2025">2025</option>
               <option value="2026">2026</option>
@@ -84,12 +87,12 @@ const App = () => {
           </div>
         </div>
 
-        <button className="btn" onClick={handleClick}>Şimdi Öde</button>
-
+        <button className="btn" onClick={handleClick}>
+          Şimdi Öde
+        </button>
       </form>
     </div>
   );
 };
 
 export default App;
-
