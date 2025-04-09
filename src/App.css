@@ -57,5 +57,11 @@
 .selectContainer{
   display: flex;
   flex-direction: row;
+  gap:12px;
+  margin-bottom: 16px;
 
+}
+
+.selectContainer .formGroup{
+  flex:1;
 }

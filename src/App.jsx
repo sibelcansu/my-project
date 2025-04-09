@@ -40,15 +40,33 @@ const App = () => {
         <div className="selectContainer">
           <div className="formGroup">
             <label>Ay</label>
-            <select>
+            <select className="ay">
               <option>AA</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+              <option>6</option>
+              <option>7</option>
+              <option>8</option>
+              <option>9</option>
+              <option>10</option>
+              <option>11</option>
+              <option>12</option>
             </select>
           </div>
 
           <div className="formGroup">
             <label>Yıl</label>
             <select>
-              <option>AA</option>
+              <option>YY</option>
+              <option>2025</option>
+              <option>2026</option>
+              <option>2027</option>
+              <option>2028</option>
+              <option>2029</option>
+              <option>2030</option>
             </select>
           </div>
 
@@ -62,7 +80,7 @@ const App = () => {
           </div>
         </div>
 
-        <button className="btn" onClick={handleClick}>Gönder</button>
+        <button className="btn" onClick={handleClick}>Şimdi Öde</button>
 
         
       </form>
