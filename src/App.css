@@ -28,7 +28,7 @@
 
 .subtitle{
   color:#595151;
-  font-size: 18px;
+  font-size: 17px;
   margin-top: 1px;
 }
 
@@ -46,6 +46,7 @@
 .formGroup label{
   margin-bottom: 10px;
   font-weight: bold;
+  margin-top: 10px;
 }
 
 .formGroup input{
