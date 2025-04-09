@@ -10,7 +10,7 @@ const App = () => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    
+
     alert(`
       Adınız: ${ad}
       Kart Numaranız: ${kartNo}
@@ -25,7 +25,7 @@ const App = () => {
       <h2 className="title">Ödeme Bilgileri</h2>
       <p className="subtitle">Kredi kartı bilgilerini giriniz</p>
 
-      <form className="paymentForm" onSubmit={handleClick}>
+      <form className="paymentForm">
         <div className="formGroup">
           <label>Kart Üzerindeki İsim</label>
           <input
