@@ -18,6 +18,10 @@ CSS
 
 JavaScript (SWC)
 
+## 🖼️ Form Önizleme
+
+![Form Ekran Görüntüsü](./form-preview.png)
+
 ## 🚀 Kurulum
 
 Projeyi klonladıktan sonra terminalde aşağıdaki adımları izleyebilirsiniz:
