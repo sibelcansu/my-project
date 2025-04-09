@@ -1,0 +1,24 @@
+.btn{
+  all:unset;
+  background-color: black;
+  color:white;
+  font-family: sans-serif;
+  font-size: 16px;
+  cursor:pointer;
+  border-radius: 5px;
+  padding: 12px;
+}
+
+.paymentContainer{
+  max-width: 400px;
+  margin:40px auto;
+  padding:24px;
+  background-color: white;
+  border-radius: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  box-shadow: 0 2px 10px;
+}
+
+.paymentTitle{
+  
+}
