@@ -4,12 +4,16 @@ import "./App.css";
 const App = () => {
   const [ad, setAd] = useState("");
   const [kartNo, setKartNo] = useState("");
+  const [ay, setAy] = useState("");
+  const [yil, setYil] = useState("");
   const [guvenlik, setGuvenlik] = useState("");
   
   const handleClick = () => {
     alert(`
       Adınız: ${ad}
       Kart Numaranız: ${kartNo}
+      Ay: ${ay}
+      Yıl: ${yil}
       Güvenlik Kodunuz: ${guvenlik}`);
   };
 
@@ -40,33 +44,33 @@ const App = () => {
         <div className="selectContainer">
           <div className="formGroup">
             <label>Ay</label>
-            <select className="ay">
-              <option>AA</option>
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-              <option>4</option>
-              <option>5</option>
-              <option>6</option>
-              <option>7</option>
-              <option>8</option>
-              <option>9</option>
-              <option>10</option>
-              <option>11</option>
-              <option>12</option>
+            <select className="ay" onChange={(e)=>setAy(e.target.value)}>
+              <option value="">AA</option>
+              <option value="01">1</option>
+              <option value="02">2</option>
+              <option value="03">3</option>
+              <option value="04">4</option>
+              <option value="05">5</option>
+              <option value="06">6</option>
+              <option value="07">7</option>
+              <option value="08">8</option>
+              <option value="09">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
             </select>
           </div>
 
           <div className="formGroup">
             <label>Yıl</label>
-            <select>
-              <option>YY</option>
-              <option>2025</option>
-              <option>2026</option>
-              <option>2027</option>
-              <option>2028</option>
-              <option>2029</option>
-              <option>2030</option>
+            <select onChange={(e)=>setYil(e.target.value)}>
+              <option value="">YY</option>
+              <option value="2025">2025</option>
+              <option value="2026">2026</option>
+              <option value="2027">2027</option>
+              <option value="2028">2028</option>
+              <option value="2029">2029</option>
+              <option value="2030">2030</option>
             </select>
           </div>
 
@@ -82,19 +86,10 @@ const App = () => {
 
         <button className="btn" onClick={handleClick}>Şimdi Öde</button>
 
-        
       </form>
     </div>
   );
 };
 
-
-const Metin = (props) => {
-  return <h2>{props.children}</h2>;
-};
-
-const Bilgiler = (props) => {
-  return <h4>{props.children}</h4>;
-};
 export default App;
 
