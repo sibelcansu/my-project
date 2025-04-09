@@ -53,3 +53,9 @@
   border:1px solid;
   border-radius: 6px;
 }
+
+.selectContainer{
+  display: flex;
+  flex-direction: row;
+
+}
