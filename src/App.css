@@ -48,10 +48,12 @@
 }
 
 .formGroup input{
-  padding: 5px;
+  height: 40px;
   font-size:14px;
-  border:1px solid;
+  padding: 6px 10px;
+  border:1px solid #ccc;
   border-radius: 6px;
+  box-sizing: border-box;
 }
 
 .selectContainer{
@@ -64,4 +66,13 @@
 
 .selectContainer .formGroup{
   flex:1;
+}
+
+.selectContainer select, .selectContainer input{
+  height: 40px;
+  font-size: 14px;
+  padding: 6px 10px;
+  border:1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
 }
