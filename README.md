@@ -27,7 +27,7 @@ JavaScript (SWC)
 Projeyi klonladıktan sonra terminalde aşağıdaki adımları izleyebilirsiniz:
 
 ```bash
-https://github.com/sibelcansu/my-project.git
+https://github.com/kullaniciadi/my-project.git
 cd my-project
 npm install
 npm run dev
